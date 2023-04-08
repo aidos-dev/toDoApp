@@ -7,3 +7,8 @@ In this project a PostgreSQL data base is applied. In order to start data base f
 ```
 docker pull postgres
 ```
+To start the daa base run the command:
+
+```
+docker run --name=todo-db -e POSTGRES_PASSWORD='qwerty' -p 5432:5432 -d --rm postgres
+```
