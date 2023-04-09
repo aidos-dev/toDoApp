@@ -1,8 +1,13 @@
 package service
 
-import "github.com/aidos-dev/toDoApp/pkg/repository"
+import (
+	todo "github.com/aidos-dev/toDoApp"
+	"github.com/aidos-dev/toDoApp/pkg/repository"
+)
 
-type Authorization interface{}
+type Authorization interface {
+	CreateUser(user todo.User) (int, error)
+}
 
 type TodoList interface{}
 
