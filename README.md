@@ -49,3 +49,15 @@ Inside the postgres environment, to check all the tables run the command:
 ```
 \d
 ```
+
+To start the docker compose for the first time run the command:
+
+```
+docker-compose up --build todo-app
+```
+
+When docker containers are built run the command without --build flag:
+
+```
+docker-compose up todo-app
+```
